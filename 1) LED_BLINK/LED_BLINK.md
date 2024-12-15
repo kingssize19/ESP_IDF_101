@@ -36,7 +36,6 @@ void app_main(void)
 * Pinin dahili peripheral matrix üzerinden genel amaçlı giriş/çıkış (GPIO) olarak kullanılmasını etkinleştirir.
 * Pinin herhangi bir özel işlevinden (örn. UART, SPI, PWM) ayrılarak GPIO modunda çalışmasını sağlar.
 
-----------------------------------------------------------------------------------------
 
 **Neden Kullanılır?**
 
@@ -44,13 +43,12 @@ void app_main(void)
 * Pinin özel çevresel işlevlerini (UART TX, SPI CS vb.) devre dışı bırakıp GPIO moduna geçirir.
 * Özellikle donanım ROM seviyesinde GPIO yapılandırmaları gerektiğinde kullanılır.
 
-----------------------------------------------------------------------------------------
 
 **Parametre :**
 * iopad_num : GPIO olarak ayarlanacak pin numarasıdır.
 * Yukarıdaki örnekte bu pin numarası GPIO_NUM_2 'dir.
 
-----------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
 
 ## esp_err_t gpio_set_direction(gpio_num_t gpio_num, gpio_mode_t mode) Fonksiyonu
 
